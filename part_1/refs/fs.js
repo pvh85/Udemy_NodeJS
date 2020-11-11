@@ -43,3 +43,12 @@ fs.readFile(
     }
 )
 
+//rename файла
+fs.rename(
+    path.join(__dirname,'notes','test.txt'),
+    path.join(__dirname,'notes','test2.txt'),
+    err=>{
+        if (err) throw err
+    }
+)
+
